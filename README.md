@@ -2,7 +2,7 @@
 
 ----
 
-Deployed Server URL - https://nodejs-hall-booking.herokuapp.com/users
+Deployed Server URL - https://nodejs-hall-booking.herokuapp.com/hall
 
 ----
 
