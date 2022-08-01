@@ -6,7 +6,7 @@ let rooms = [];
 let roomNo = 100;
 
 router.get("/", function (req, res, next) {
-  res.render("users");
+  res.render("hall");
 });
 
 //Get all created rooms
