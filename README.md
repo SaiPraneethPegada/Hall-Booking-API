@@ -1,28 +1,17 @@
 # Hall-Booking API
 
-----
+## [Deployed URL](https://hall-booking-0nrd.onrender.com/hall)
 
-Deployed Server URL - https://nodejs-hall-booking.herokuapp.com/hall
+### API End-Points :
 
-----
+| Method | End point | Description |
+| ---- | ---- | ---- |
+| POST | /create-room | will create a Room/Hall. |
+| POST | /room-booking | will book a Room/Hall. |
+| GET | /booked-rooms | will fetch all the booked Rooms/Halls. |
+| GET | /booked-customer-details | will fetch the customer details those whose booked a Room/Hall. |
 
-* API End-Points :
-
-
--> "/create-room" : To create a Room/Hall.
-    
-    Keys Structure in Postman:
-    
-        {
-          "noOfSeats": number,
-          "amentities": [array],
-          "price": "string"
-        }
-
-
--> "/room-booking" : To book a Room/Hall.
- 
-     Keys Structure in Postman:
+* Keys Structure to create a room:
      
         {
           "roomNo" : number,
@@ -32,8 +21,10 @@ Deployed Server URL - https://nodejs-hall-booking.herokuapp.com/hall
           "endTime": "string"
         }
 
-
--> "/booked-rooms" : To get all the booked Rooms/Halls.
-
-
--> "/booked-customer-details" : To get the customer details those whose booked a Room/Hall.
+* Keys Structure to book a room:
+    
+        {
+          "noOfSeats": number,
+          "amentities": [array],
+          "price": "string"
+        } 
